@@ -1,5 +1,7 @@
 package testNG;
 
+import java.awt.Window;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,6 +50,14 @@ public class Testngtask {
 		
 
 	}
+
+	@Test
+	public void sample() {
+      WebDriverManager.chromedriver().setup();
+      WebDriver driver = new ChromeDriver();
+      driver.get("http://www.adactin.com/HotelApp/");
+	}
+	
 	
 	@Test
 	private void sample2() {
@@ -64,10 +74,5 @@ public class Testngtask {
 		System.out.println("11");
 		System.out.println("12");
 	}
-	
-	
-	
-	
-	
 	
 }
