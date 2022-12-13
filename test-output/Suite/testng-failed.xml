@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="password" value="kamal34"/>
+  <test thread-count="5" name="gmail(failed)">
+    <parameter name="username" value="kamal34@gmail.com"/>
+    <classes>
+      <class name="org.sample.Newparameters">
+        <methods>
+          <include name="gamila"/>
+          <include name="gamilb"/>
+        </methods>
+      </class> <!-- org.sample.Newparameters -->
+    </classes>
+  </test> <!-- gmail(failed) -->
+  <test thread-count="5" name="gmaila(failed)">
+    <parameter name="username" value="thineshkamal34@gmail.com"/>
+    <classes>
+      <class name="org.sample.Newparameters">
+        <methods>
+          <include name="gamila"/>
+          <include name="gamilb"/>
+        </methods>
+      </class> <!-- org.sample.Newparameters -->
+    </classes>
+  </test> <!-- gmaila(failed) -->
+  <test thread-count="5" name="gmailb(failed)">
+    <parameter name="username" value="34@gmail.com"/>
+    <classes>
+      <class name="org.sample.Newparameters">
+        <methods>
+          <include name="gamil" invocation-numbers="0"/>
+          <include name="gamila"/>
+          <include name="gamilb"/>
+        </methods>
+      </class> <!-- org.sample.Newparameters -->
+    </classes>
+  </test> <!-- gmailb(failed) -->
+</suite> <!-- Failed suite [Suite] -->
