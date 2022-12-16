@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import org.testng.internal.Systematiser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -57,6 +58,7 @@ public class Testngtask {
       WebDriver driver = new ChromeDriver();
       driver.get("http://www.adactin.com/HotelApp/");
 	}
+
 	
 	
 	@Test
@@ -74,5 +76,14 @@ public class Testngtask {
 		System.out.println("11");
 		System.out.println("12");
 	}
-	
+	public void demo() {
+        System.out.println("i");
+        System.out.println("l");
+        System.out.println("o");
+        System.out.println("v");
+        System.out.println("e");
+        
+	}
+
+
 }
